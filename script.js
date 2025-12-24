@@ -1,11 +1,12 @@
 // 🔥 FIREBASE CONFIG (PASTE YOUR OWN)
 const firebaseConfig = {
-  apiKey: "AIzaSyXXXX",
+  apiKey: "AIzaSyAodBsuH_V4cEIS14Lmh6O_eePiYQocLeY",
   authDomain: "exam-preparation-planner.firebaseapp.com",
   projectId: "exam-preparation-planner",
-  storageBucket: "exam-preparation-planner.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcd1234"
+  storageBucket: "exam-preparation-planner.firebasestorage.app",
+  messagingSenderId: "955145029194",
+  appId: "1:955145029194:web:e4c636f9d6a1b833ffc8b3",
+  measurementId: "G-HCF9K3GRNJ"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -130,4 +131,5 @@ function logout() {
   auth.signOut().then(() => location.href = "index.html");
 
 }
+
 
