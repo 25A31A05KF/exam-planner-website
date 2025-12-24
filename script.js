@@ -45,7 +45,7 @@ function googleLogin() {
         examDate: ""
       }, { merge: true });
     })
-    .then(() => location.href = "dashboard.html");
+    .then(() => location.href = "./dashboard.html");
 }
 
 /* ================= DASHBOARD ================= */
@@ -130,3 +130,4 @@ function logout() {
   auth.signOut().then(() => location.href = "index.html");
 
 }
+
