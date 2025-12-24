@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- FullCalendar -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h2 id="welcome"></h2>
+    <h3>📅 Days Left: <span id="daysLeft"></span></h3>
+
+    <div class="card">
+      <h3>📌 Today’s Plan</h3>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div class="card">
+      <h3>📊 Progress</h3>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>📈 Study Progress Chart</h3>
+      <canvas id="progressChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>📅 Study Calendar</h3>
+      <div id="calendar"></div>
+    </div>
+
+    <div class="card">
+      <h3>⏱ Focus Timer</h3>
+      <p id="timer">25:00</p>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
