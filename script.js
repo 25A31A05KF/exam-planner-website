@@ -1,11 +1,11 @@
 // 🔥 FIREBASE CONFIG (PASTE YOUR OWN)
 const firebaseConfig = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_AUTH_DOMAIN",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_STORAGE_BUCKET",
-  messagingSenderId: "PASTE_SENDER_ID",
-  appId: "PASTE_APP_ID"
+  apiKey: "AIzaSyXXXX",
+  authDomain: "exam-preparation-planner.firebaseapp.com",
+  projectId: "exam-preparation-planner",
+  storageBucket: "exam-preparation-planner.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcd1234"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -128,4 +128,5 @@ function startTimer() {
 /* ================= LOGOUT ================= */
 function logout() {
   auth.signOut().then(() => location.href = "index.html");
+
 }
