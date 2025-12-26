@@ -1,6 +1,6 @@
 // 🔥 FIREBASE CONFIG (PASTE YOUR OWN)
 const firebaseConfig = {
-  apiKey: "AIzaSyAodBsuH_V4cEIS14Lmh6O_eePiYQocLeY",
+  apiKey: "Replace_with_env_la_la_la",
   authDomain: "exam-preparation-planner.firebaseapp.com",
   projectId: "exam-preparation-planner",
   storageBucket: "exam-preparation-planner.firebasestorage.app",
@@ -131,5 +131,6 @@ function logout() {
   auth.signOut().then(() => location.href = "index.html");
 
 }
+
 
 
